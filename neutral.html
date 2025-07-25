@@ -1,0 +1,202 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Misiada | Neutrale</title>
+        <link rel="icon" type="image/png" href="./src/img/favicon.png">
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+    <body>
+        <img src="./src/img/cover3.png" class="cover">
+        <div class="topbar">
+            <a href="./crewmate.html">
+                <div class="button">
+                    <text style="font-family:vcr;color:#00ffff;">Crewmate</text>
+                </div>
+            </a>
+
+            <a href="./neutral.html">
+                <div class="button">
+                    <text style="font-family:vcr;color:#eeeeee;">Neutral</text>
+                </div>
+            </a>
+
+            <a href="./impostor.html">
+                <div class="button">
+                    <text style="font-family:vcr;color:#ff0000;">Impostor</text>
+                </div>
+            </a>
+
+            <a href="./list.html">
+                <div class="button">
+                    <text style="font-family:vcr;color:#ffffff;">Lista ról</text>
+                </div>
+            </a>
+
+            <a href="./mod.html">
+                <div class="button">
+                    <text style="font-family:vcr;color:#ffffff;">Modifikatory</text>
+                </div>
+            </a>
+
+            <a href="tutorial.html">
+                <div class="button">
+                    <text style="font-family:vcr;color:#ffffff;">Poradnik do pobrania moda</text>
+                </div>
+            </a>
+
+            <a href="link.html">
+                <div class="button">
+                    <text style="font-family:vcr;color:#ffffff;">Linki</text>
+                </div>
+            </a>
+
+            <a href="https://linktr.ee/taxi0k">
+                <div class="watermark">
+                    <text style="font-family:vcr;">By TaXi0k</text>
+                </div>
+            </a>
+
+        </div>
+        
+        <img src="./src/img/Neutral.png" style="display: flex;margin: 0 auto;width:1200px;height:auto;padding-top:50px;">
+
+        <div class="body">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Wyszukaj role..." class="search-bar">
+                <a href="./mod.html" style="margin-left:20px;width: 20%;"><div class="search-button"><center>Modifikatory</center></div></a>
+            </div>
+            
+            <!-- ROLES -->
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Amnesiac.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Amnesiac to rola neutralna bez warunku zwyciestwa i praktycznie bez roli. Jednak moze sobie przypomniec role, odnajdujac martwego gracza. Gdy to zrobi, przejmuje role gracza którego cialo znalazla. Przed podniesieniem roli piec sekund po smierci gracza otrzymuje on strzalke do ciala.
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/GuardianAngel.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Guardian angel to neutralna rola, która sprzymierza się z drużyną swojego celu. Jego zadaniem jest chronić cel za wszelką cenę. Jeśli jego cel przegra, on również przegrywa. Guardian angel ma umiejetnosc <text class="code">Protect</text>, która zapewnia celowi tarcze, widziana przez guardian angela oraz grazca majacego tarcze (<text style="color:yellow;">zólta</text> tarcza). Po smierci celu guardian angel staje sie amnesiaciem.
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Mercenary.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Mercenary moze chronic innych graczy. Chronieni gracze pochlaniaja zdolnosci wymierzone w nich, a nastepnie zamieniaja je na walute.<br>
+                    Te walute mozna wykorzystac do przekupywania innych graczy. Jesli przekupiony gracz przezyje i wygra gre, Mercenary równiez wygrywa <b>-</b> nie musi sam przetrwac.<br>
+                    Nie moze jednak wygrac razem z rolami neutral evil i loversami.
+
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Survivor.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Survivor to rola neutralna, której celem jest przezycie. Jesli jej sie to uda dolacza do druzyny która wygrala. Ma on mozliwosc dania sobie tarczy.
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Executioner.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Executioner to rola neutralna, której zadaniem jest wyglosowanie nadanego jej celu. Gdy cel zostanie wyrzucony podczas meetingu (nie zestrzelony tylko wyglosowany) to executioner wygrywa. Gdy cel zostanie zabity executioner zmienia sie w survivora.
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Doomsayer.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Doomsayer wygrywa gre gdy poprawnie zgadnie role 3 graczy. Posiada tez umiejetnosc <text class="code">Observe</text> podpowiadajaca mu jaka role ma zaobserwowany gracz.
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Jester.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Jester to rola neutralna, której zadaniem jest zostanie wglosowanym podczas meetingu. Moze wskakiwac do ventów, ale nie przeskakiwac pomiedzy nimi. Ma on takze impostor vision, czyli widzi wszystko nawet podzczas wylaczonych swiatel.
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Phantom.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Phantom to neutralna rola z wlasnym warunkiem zwyciestwa. Po smierci staje sie pólniewidzialny i musi ukonczyc wszystkie swoje zadania, nie dajac sie złapac. Phantoma mozna zlapac poprzez klikniecie na niego.<br>
+                    Phantom'em zosatc moze pierwszy martwy neutral.
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Arsonist.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Arsonist podlewa graczy w poblizu benzyna. Jego celem jest wyeliminowanie wszystkich graczy. Gdy zabije jednego podlanego gracza, wszyscy z nich umieraja.
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Glitch.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Glitch to zabijajaca rola neutralna. Jego celem jest wyeliminowanie wszystkich graczy. Ma on trzy umiejetnosci:<br>
+                    <text class="code">Kill</text> zabija gracza,<br>
+                    <text class="code">Hack</text> uniemozliwia graczowi wszystkie interakcje,<br>
+                    <text class="code">Mimic</text> zmienia glitcha w wybranego gracza (tak jak morphling).<br>
+                    Glitch moze tez ventowac.
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Juggernaut.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Juggernaut to zabijajaca rola neutralna, której kill cooldown spada o 5s z kazdym zabójstwem. Zaczyna z cooldownem 30s lecz moze on spasc do zera, co umozliwia ciagle zabójstwa. Jego celem jest wyeliminowanie wszystkich graczy.
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Werewolf.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Werewolf to neutralna rola zabijajaca, której celem jest wyeliminowanie wszystkich graczy. By zabijac musi uzyc umiejetnosci <text class="code">Rampage</text> pozwalajacej mu na wykonanie 2 szybkich zabójstw.
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Plaguebearer.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Plaguebearer to rola neutralna, której celem jest zarazenie kazdego gracza w lobby. Gdy to zrobi zmienia sie w <text class="code">Pestilence</text>. Gdy zarazony gracz wejdzie w interakcje z niezarazonym graczem, ten tez zostaje zrazony.<br>
+                </div><br>
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Pestilence.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Pestilence to zabijajaca rola neutralna, której celem jest wyeliminowanie wszystkich graczy. Jej kill cooldown jest bardzo krótki, a sama nie moze zostac zabity.
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Vampire.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Vampire to neutralna rola zabijajaca, której celem jest wyeliminowanie wszystkich graczy. Gdy ugryzie crewmate/neutral b./neutral e./(tez loversa) ten dolaczy do niego i stanie sie drugim wampirem. Jesli ugryzie neutral killinga lub impostora to go zabije.
+                    Kazde kolejne ugryzienie to zwykle zabójstwo. Cooldown wampira odnawia sie w vencie.<br>
+                    Vampire moze ventowac.
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://raw.githubusercontent.com/TaXi0k/misiadatownofus/main/images/inquisitor.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Ta rola wygrywa po smierci wszystkich jej celi (heretyków). Inkwizytor zna role celi, ale nie wie kim sa. By pomóc mu dowiedziec sie kim sa cele ma on ability <text class="code">Inquire</text> pozwalajace sprawdzic podczas meetingu czy dana osoba jest heretykiem.<text class="blank">Inquisitor</text>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Load external JavaScript -->
+        <script src="scripts.js"></script>
+        
+    </body>
+</html>
