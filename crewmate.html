@@ -1,0 +1,283 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Misiada | Crewmate</title>
+        <link rel="icon" type="image/png" href="./src/img/favicon.png">
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+    <body>
+        <img src="./src/img/cover3.png" class="cover">
+        <div class="topbar">
+            <a href="./crewmate.html">
+                <div class="button">
+                    <text style="font-family:vcr;color:#00ffff;">Crewmate</text>
+                </div>
+            </a>
+
+            <a href="./neutral.html">
+                <div class="button">
+                    <text style="font-family:vcr;color:#eeeeee;">Neutral</text>
+                </div>
+            </a>
+
+            <a href="./impostor.html">
+                <div class="button">
+                    <text style="font-family:vcr;color:#ff0000;">Impostor</text>
+                </div>
+            </a>
+
+            <a href="./list.html">
+                <div class="button">
+                    <text style="font-family:vcr;color:#ffffff;">Lista ról</text>
+                </div>
+            </a>
+
+            <a href="./mod.html">
+                <div class="button">
+                    <text style="font-family:vcr;color:#ffffff;">Modifikatory</text>
+                </div>
+            </a>
+
+            <a href="tutorial.html">
+                <div class="button">
+                    <text style="font-family:vcr;color:#ffffff;">Poradnik do pobrania moda</text>
+                </div>
+            </a>
+
+            <a href="link.html">
+                <div class="button">
+                    <text style="font-family:vcr;color:#ffffff;">Linki</text>
+                </div>
+            </a>
+
+            <a href="https://linktr.ee/taxi0k">
+                <div class="watermark">
+                    <text style="font-family:vcr;">By TaXi0k</text>
+                </div>
+            </a>
+
+        </div>
+        
+        <img src="./src/img/Crewmate.png" style="display: flex;margin: 0 auto;width:1200px;height:auto;padding-top:50px;padding-bottom:50px;">
+
+        <div class="body">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Wyszukaj role..." class="search-bar">
+                <a href="./mod.html" style="margin-left:20px;width: 20%;"><div class="search-button"><center>Modifikatory</center></div></a>
+            </div>
+            
+            <!-- ROLES -->
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Aurial.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Gdy w jego okolicy ktos uzyje swojego ability, dostaje on (aurial) strzalke do miejsca, gdzie uzyto tego ability. Strzalka jest w kolorze osoby która uzyla tego ability.<text class="blank">aurial</text>
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Detective.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Crewmate, który moze badac miejsca zbrodni i nastepnie sprawdzac graczy. Najpierw musi znalezc miejsce zbrodni i je zbadac. W tej samej lub kolejnych rundach moze nastepnie sprawdzic graczy, aby ustalic, czy byli zabójcami. Jesli sprawdzany gracz jest zabójca lub znajdowal sie w poblizu miejsca zbrodni, otrzyma czerwony blysk. W przeciwnym razie blysk bedzie zielony.<br>
+                    Otrzymuje on tez dodatkowe informacje przy zgloszeniu ciala.<text class="blank">Detective</text>
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Investigator.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Widzi stópki (w kolorze gracza który je zostawil).<text class="blank">Investigator</text>
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Lookout.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Moze on obserwowac graczy, by w trakcie meetingu poznac role graczy, którzy weszli w interakcje z obserwowanym graczem.<text class="blank">Lookout</text>
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Medium.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Moze on uzyc umiejetnosci mediate, gdy nikt nie umarl nic sie nie stanie. Gdy jednak ktos umarl w tej rundzie, medium zobaczy ducha martwej osoby i strzalke do niego. Duch otrzyma tez strzalke do medium.<text class="blank">Medium</text>
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Mystic.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Gdy ktos umiera, ekran mystica miga na niebiesko, widzi on takze wtedy strzalke do ciala.<text class="blank">mystic</text>
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Seer.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Moze on wejsc z innym graczem w interakcje, sprawdzajac do jakiej druzyny nalezy ale:<br>
+                    <ul style="list-style-type: square;">
+                        <li>Crewmate wyswietla sie na <text style="color:limegreen">zielono</text></li>
+                        <li>Neutral i Impostor wyswietla sie na <text style="color:red">czerwono</text></li>
+                    </ul><text class="blank">seer</text>
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Snitch.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Gdy wykona wszystkie taski widzi kto jest Impostorem (<text style="color:red">czerwone</text> nicki), ale gdy zostanie mu ostatni task Impostorzy maja strzalke w jego kierunku.<text class="blank"> Snitch</text>
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Tracker.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Moze on wejsc w interakcje z graczem, by widziec aktualizujaca sie co kilka sekund strzalke do jego aktualnej pozycji.<text class="blank"> Tracker</text>
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Trapper.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Moze on postawic na mapie pulapke, jesli w te pulapke wejdzie (i spedzi w niej sekunde) 3 lub wiecej graczy widzi on na czacie role tych osob.<text class="blank"> Trapper</text>
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Deputy.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    W trakcie rundy Deputy moze uzyc na graczu umiejetnosci <text class="code">Camp</text>, gdy osoba na której uzyto umiejetnosci umrze Deputy zostanie powiadomiony. Podczas meetingu Deputy moze strzelic do osoby, ktora zabila ofiare. Gdy trafi dobrze, morderca umrze, jesli zle to nic sie nie dzieje.<text class="blank"> Deputy</text>
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Hunter.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Moze on wejsc w interakcje z graczem. Gdy ten gracz uzyje interakcji, Hunter moze go zabic. W przeciwnienstwie do Sheriffa nie umiera on gdy trafi zle.<text class="blank"> Hunter</text>
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Sheriff.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Moze on strzelac do innych graczy. Gdy zabije Neutrala lub Impostora nic sie nie dzieje. Gdy strzeli do Crewmate'a, umrze, a cel przezyje. <text class="blank"> Sheriff</text>
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Veteran.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Gdy uzyje ability, a ktos w czasie jego dzialania wejdzie z nim w interakcje to umiera.<text class="blank"> Veteran</text>
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Vigilante.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    W trakcie meetingów może strzelac w role Impostorskie i Neutralne. Moze on zastrzelic 5 osób. Ma tez 3 bezpieczne guessy.<text class="blank"> Vigilante</text>
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Jailor.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Moze zamknac gracza do wiezienia, w trakcie meetingu osoba w wiezieniu i Jailor maja prywatny czat. Jailor moze odstrzelic osobe w wiezieniu. Jesli uwieziony byl zly moze dalej zamykac graczy, jesli byl dobry juz nie.<text class="blank"> Jailor</text>
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Politician.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Gdy wejdzie w interakcje z przynajmniej polowa lobby moze oglosic sie nowym <text class="code">Mayor'em</text>. Jesli jednak mniej niz polowa Crewmate'ów zostanie przekonana, ujawnienie sie nie powiedzie, a <text class="code">Politician</text> nie bedzie mógl prowadzic kampanii przez 1 runde.<br>
+                </div><br>
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Mayor.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Podczas meetingu glos <text class="code">Mayora</text> liczy sie potrójnie.
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Prosecutor.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Widzi on kto zaglosowal na kogo glosowal na meetingu. Moze tez przerzucic wszystkie glosy na jedna wybrana osobe. Gdy wyrzuci dobra osobe umiera, gdy wyrzuci zlego nic sie nie dzieje.<text class="blank"> Prosecutor</text>
+                </div>
+            </div>
+            
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Swapper.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Na meetingu zamienia 2 osoby miejscami.<text class="blank"> Swapper</text>
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Altruist.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Moze on wskrzesic wszystkich martwych w okolicy. By to zrobic musi przez 5 sekund stac na cialach. Ma on 3 uzycia umiejetnosci. Gdy ktos rozpocznie meeting w trakcie gdy wskrzesza kogos, traci uzycie umiejetnosci.<text class="blank"> Altruist</text>
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Cleric.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Ma on 2 umiejetnosci, ktorych moze uzyc na innych graczach. Moze on oczyscic gracza ze wszystkich nalozonych na niego efektow. Moze on dac graczowi tarcze powodujaca ze nie da sie go zabic przez 25s. (gracz nie widzi tej tarczy).<text class="blank"> Cleric</text>
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Medic.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Moze on dac graczowi tarcze która nie pozwoli go zabic. Gdy ktoś próbuje zabic gracza z tarcza ekran medyka miga. Gdy medyk zglasza cialo widzi czy zabila je osoba o kolorze jasnym czy ciemnym.<text class="blank"> Medic</text>
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Oracle.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Ma on 2 umiejetnosci, których moze uzyc na innych graczach. Moze on uzyc umiejetnosci confess, powodujacej ze gracz zwierza sie oraclowi. Gdy oracle umiera ta informacja zostaje ujawniona wszystkim. Moze on uzyc umiejetnosci bless na graczu by zapewnic mu immunitet na nastepne spotkanie.<text class="blank"> Oracle</text>
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Imitator.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Podczas meetingu moze podniesc role martwej osoby na nastepna runde. (nie moze podniesc niektorych rol).<text class="blank"> Imitator</text>
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Plumber.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Moze on wyciagac graczy z ventow, a takze je zatykac.<text class="blank"> Plumber</text>
+                </div>
+            </div>
+
+            <div class="role">
+                <img src="https://github.com/AU-Avengers/TOU-Mira/raw/main/Images/RoleHeaders/Transporter.png" height="auto" width="300px"><br>
+                <div style="padding-left:20px;">
+                    Moze on zamienic 2 graczy miejscami (moze tez teleportowac ciala).<text class="blank"> Transporter</text>
+                </div>
+            </div>
+
+            <div class="role">
+                <a href="./gambling.html">
+                    <div style="padding-left:20px;">
+                        <text class="blank">Ԍ</text>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Load external JavaScript -->
+        <script src="scripts.js"></script>
+        
+    </body>
+
+</html>
