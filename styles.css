@@ -1,0 +1,493 @@
+/* Place your CSS styles in this file */
+
+@font-face {
+    font-family: vcr;
+    src: url(./src/font/VCR_OSD_MONO_1.001.ttf);
+}
+@font-face {
+    font-family: joffrey;
+    src: url(./src/font/In-your-face-joffrey.ttf)
+}
+@font-face {
+    font-family: inconsolata;
+    src: url(./src/font/Inconsolata-Regular.ttf);
+}
+
+@keyframes rainbow {
+  to {background-position:-200% 0%}
+}
+
+/*
+::-webkit-scrollbar {
+  width: 6px;
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  border-style: solid;
+  border-color: rgb(181, 181, 181);
+  border-width: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(181, 181, 181);
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: white;
+  border-color: white;
+}
+*/
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  /* Single column of dots */
+  background-image: radial-gradient(
+    circle at center 4px, /* Dot position */
+    #ffffff 1.5px,       /* Dot size */
+    transparent 2px       /* Make sure it doesn't bleed */
+  );
+  background-size: 8px 8px; /* Cell size (must match scrollbar width) */
+  background-repeat: repeat-y;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 255, 255);
+  border-radius: 4px;
+}
+
+.topbar {
+    display:flex;
+    position: sticky;
+    top:0;
+    backdrop-filter: blur(10px);
+    background-color: #000000ba;
+}
+
+h2 {
+    text-align: center;
+    font-family: vcr;
+    font-weight: normal;
+    margin:0;margin-top:100px;
+    font-size: 125px;
+
+    background: linear-gradient(to right,
+        rgba(255,0,0,1) 0%, 
+        rgba(255,154,0,1) 10%, 
+        rgba(208,222,33,1) 20%, 
+        rgba(79,220,74,1) 30%, 
+        rgba(63,218,216,1) 40%, 
+        rgba(47,201,226,1) 50%, 
+        rgba(28,127,238,1) 60%, 
+        rgba(95,21,242,1) 70%, 
+        rgba(186,12,248,1) 80%, 
+        rgba(251,7,217,1) 90%, 
+        rgba(255,0,0,1) 100%) 
+        0 0/200% 100%;
+    animation: rainbow 2s linear infinite;
+    color: transparent;
+     -webkit-background-clip: text;
+    background-clip:text;
+}
+
+h3 {
+    font-weight: 1;
+    text-align: center;
+    font-family: vcr;
+    font-size: 30px;
+    color: white;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: vcr;
+    font-weight: normal;
+    font-size: 87px;
+    background: linear-gradient(to right,
+        rgba(255,0,0,1) 0%, 
+        rgba(255,154,0,1) 10%, 
+        rgba(208,222,33,1) 20%, 
+        rgba(79,220,74,1) 30%, 
+        rgba(63,218,216,1) 40%, 
+        rgba(47,201,226,1) 50%, 
+        rgba(28,127,238,1) 60%, 
+        rgba(95,21,242,1) 70%, 
+        rgba(186,12,248,1) 80%, 
+        rgba(251,7,217,1) 90%, 
+        rgba(255,0,0,1) 100%) 
+        0 0/200% 100%;
+    animation: rainbow 2s linear infinite;
+    color: transparent;
+     -webkit-background-clip: text;
+    background-clip:text;
+}
+p {
+    text-align: center;
+    font-family: vcr;
+    font-weight: normal;
+    font-size: 22px;
+    color: white;
+}
+.gamble{
+    font-family: vcr;
+    display: flex;
+    width: 400px;
+    margin: 0 auto;
+    /*DEBUG*/
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 3px;
+    /*DEBUG*/
+}
+.gambleinput {
+    font-family: vcr;
+    width: 85%;
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+}
+.gamblebtn{
+    font-family: vcr;
+    width: 15%;
+    aspect-ratio: 1 / 1;
+    background-color: transparent;
+    border-style: solid;
+    color: white;
+    border-left: 3px solid white;
+}
+.gamblebtn:hover{
+    background-color: rgba(255, 255, 255, 0.618);
+    color: black;
+}
+.gamblebtn:active{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+        #result {
+            font-family:vcr;
+            font-size: 25px;
+            margin-top: 20px;
+            min-height: 30px;
+        }
+        .win {
+            color: #1eff00;
+            animation: pulse 0.5s infinite alternate;
+        }
+        .lose {
+            color: #ff5555;
+            animation: pulse 0.5s infinite alternate;
+        }
+        @keyframes pulse {
+            from { opacity: 1; }
+            to { opacity: 0.7; }
+        }
+
+a {
+    text-decoration: none;
+}
+
+.cover {
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+.watermark {
+    width: fit-content;
+    height: max-content;
+    background-color: transparent;
+    padding-top:10px;padding-bottom: 7px;
+    padding-left:15px;padding-right:15px;
+    margin: 10px;
+    font-size:30px;
+    border-radius: 12px;
+    color:#5f00ae;
+}
+.watermark:hover {
+    color:#8c00ff;
+}
+.watermark:active {
+    color:#a02cff;
+}
+
+.button {
+    width: fit-content;
+    height: max-content;
+    background-color: #252525;
+    padding-top:10px;padding-bottom: 7px;
+    padding-left:15px;padding-right:15px;
+    margin: 10px;
+    font-size:30px;
+    border-radius: 12px;
+}
+.button:hover {
+    background-color: #444444;
+    cursor: pointer;
+}
+.button:active {
+    background-color: #5d5d5d;
+}
+
+body {
+    background-color: #000000;
+}
+
+.normal {
+    font-family: joffrey;
+    color:rgb(255, 255, 255);
+    font-size: 50px;
+    padding-left: 300px;padding-right: 300px;padding-top:50px;
+    /*background-color: blueviolet;*/
+    
+}
+.link {
+    font-family: vcr;
+    color:#4a86e8;
+    text-decoration: underline;
+    font-size: 30px;
+    padding-left: 25px;
+}
+.link:hover{
+    color:#4ab3e8;
+}
+.link:active{
+    color:#78cbf4;
+}
+.linkb {
+    color:#4a86e8;
+    text-decoration: underline;
+}
+.linkb:hover{
+    color:#4ab3e8;
+}
+.linkb:active{
+    color:#78cbf4;
+}
+
+.content {
+    font-family: vcr;
+    color:rgb(200,200,200);
+    font-size: 30px;
+    padding-left: 38px;
+}
+
+.code {
+    font-family: inconsolata;
+    background-color: #202020;
+    padding-left: 5px;padding-right: 5px;
+    border: #555555;border-width: 2px;border-style: solid;
+    border-radius: 4px;
+}
+.note {
+    font-family: inconsolata;
+    color: #555555;
+    font-size: 23px;
+}
+
+.rolelist {
+    display: flex;
+    margin: 0 auto;
+    width: 800px;
+    padding-top: 50px;
+}
+.left{
+    width: 35%;
+    background-color: #444444;
+    text-align: right;
+    font-family: vcr;
+    color: white;
+    font-size: 33px;
+    
+    border-width: 30px;
+    border-style: solid;
+    border-color: #444444;
+    border-radius: 15px;
+}
+.right {
+    width: 65%;
+    text-align: left;
+    font-family: vcr;
+    color: white;
+    font-size: 33px;
+
+    border-width: 30px;
+    border-style: solid;
+    border-color: #5d5d5d00;
+    border-radius: 30px;
+}
+
+.body {
+    /*DEBUG
+    border-color: fuchsia;
+    border-style: solid;
+    border-width: 3px;
+    /*DEBUG*/
+
+    /*display: flex;*/
+    margin: 0 auto;
+    width: 70%;
+}
+
+.search-container {
+    /*DEBUG
+    border-color: rgb(255, 251, 0);
+    color:rgb(255, 251, 0);
+    border-style: solid;
+    border-width: 3px;
+    /*DEBUG*/
+    top: 75px;
+    position: sticky;
+    margin-bottom: 70px;
+    height: 44px;
+    width: 100%;
+    display:flex;
+    backdrop-filter: blur(10px);
+    background-color: #000000ba;
+}
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    font-family: vcr;
+    outline: none;
+    color: white;
+    background-color: #202020;
+    border: #555555;border-width: 2px;border-style: solid;
+    border-radius: 8px;
+}
+.search-button {
+    /*DEBUG
+    border-color: limegreen;
+    color:limegreen;
+    border-style: solid;
+    border-width: 3px;
+    /*DEBUG*/
+
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    font-family: vcr;
+    outline: none;
+    color: #757575;
+    background-color: #202020;
+    border: #555555;border-width: 2px;border-style: solid;
+    border-radius: 8px;
+}
+.search-button:hover{
+    color:white;
+    background-color: #555555;
+    border-color: #757575;
+}
+.search-button:active{
+    color:white;
+    background-color: #757575;
+    border-color: #757575;
+}
+
+.role{
+    margin-left: 100px;margin-right: 100px;
+    width: 80%;
+    font-family: vcr;
+    color: #d5d5d5;
+    font-size: 25px;
+    margin-bottom: 70px;
+    border-left: 5px solid #c4c4c4;
+    border-radius: 10px;
+}
+.role.hidden{
+    display: none;
+}
+.blank{
+    user-select: none; /* Standard property */
+    -webkit-user-select: none; /* Safari/Chrome */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    color:transparent;
+}
+
+.header {
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 5px;
+    background: linear-gradient(to right,
+        rgba(255,0,0,1) 0%, 
+        rgba(255,154,0,1) 10%, 
+        rgba(208,222,33,1) 20%, 
+        rgba(79,220,74,1) 30%, 
+        rgba(63,218,216,1) 40%, 
+        rgba(47,201,226,1) 50%, 
+        rgba(28,127,238,1) 60%, 
+        rgba(95,21,242,1) 70%, 
+        rgba(186,12,248,1) 80%, 
+        rgba(251,7,217,1) 90%, 
+        rgba(255,0,0,1) 100%) 
+        0 0/200% 100%;
+    animation: rainbow 2s linear infinite;
+    color: transparent;
+     -webkit-background-clip: text;
+    background-clip:text;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left:20px;
+    padding-right:20px;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: max-content;
+    width: max-content;
+    font-size: 75px;
+    text-align: center;
+    font-family: joffrey;
+}
+
+.kolorki {
+    font-family: vcr;
+    color: white;
+    font-size: 40px;
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    margin-top: 70px;
+}
+.kolorki-container{
+    /*DEBUG*/
+    border-color: rgb(255, 255, 255);
+    color:rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 30px;
+    /*DEBUG*/
+    width: 50%;
+    height: 900px;
+    margin-left:20px;margin-right: 20px;
+}
+
+.rainbow{
+    background: linear-gradient(to right,
+        rgba(255,0,0,1) 0%, 
+        rgba(255,154,0,1) 10%, 
+        rgba(208,222,33,1) 20%, 
+        rgba(79,220,74,1) 30%, 
+        rgba(63,218,216,1) 40%, 
+        rgba(47,201,226,1) 50%, 
+        rgba(28,127,238,1) 60%, 
+        rgba(95,21,242,1) 70%, 
+        rgba(186,12,248,1) 80%, 
+        rgba(251,7,217,1) 90%, 
+        rgba(255,0,0,1) 100%) 
+        0 0/200% 100%;
+    animation: rainbow 2s linear infinite;
+    color: transparent;
+     -webkit-background-clip: text;
+    background-clip:text;
+}
+
+.lg {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
